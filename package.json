@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "nano": "~4.2.1",
+    "async": "~0.2.9",
+    "event-stream": "~3.0.20",
+    "q": "~0.9.7",
+    "csv-streamify": "~0.9.0"
+  },
+  "name": "couch-stream",
+  "version": "0.0.1",
+  "description": "Import sample data to CouchDB & refresh a browser view using HTML5 EventSource.",
+  "main": "olympicathletes_dbsetup.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrismilleruk/couch-stream"
+  },
+  "author": "Chris Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrismilleruk/couch-stream/issues"
+  },
+  "homepage": "https://github.com/chrismilleruk/couch-stream"
+}

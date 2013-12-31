@@ -1,0 +1,26 @@
+<head>
+    <title>CouchDB Changes feed demo</title>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
+    <script type="text/javascript" src="olympicathletes.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="MyCtrl">
+        Hello, {{name}}! Listen:
+        <input type="checkbox" ng-model="listening" ng-true-value="YES" ng-false-value="NO">
+        <div>
+            <h2 ng-if="info.title">{{info.title}}</h2>
+            <p ng-if="info.message" ng-repeat="line in info.message.split('\n')">{{line}}</p>
+        </div>
+        <ul>
+            <li ng-repeat="row in dataObj.rows track by row.key">
+                In {{row.key[0]}} there were {{row.value}} Gold Medals
+            </li>
+        </ul>
+        <ul>
+            <li>Data Status: {{dataStatus}}</li>
+            <!--li ng-repeat="result in results track by result.seq">
+                {{result}}
+            </li-->
+        </ul>
+    </div>
+</body>
