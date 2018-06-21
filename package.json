@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "nano": "~6.1.4",
+    "nano": "~6.4.1",
     "async": "~0.2.9",
     "event-stream": "~3.0.20",
     "q": "~0.9.7",
